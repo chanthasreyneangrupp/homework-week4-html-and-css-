@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+p {
+  text-align: center;
+  font-size: 14px;
+}
+h2 {
+  text-align: center;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 15px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(128, 128, 128, 0.4) 00px 0px 5px 5px;
+}
+.section img {
+    border-radius: 8px;
+    width: 250px;
+    margin: 5px;
+}
+.circle {
+    clip-path: circle(35%);
+}
+
+.oval {
+    clip-path: ellipse(60% 40%);
+}
+
+h3 {
+  margin-left: 15px;
+}
+
+.text {
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border: 1px solid lab(93.5% 2.02 0.71);
+  table-layout: fixed; 
+}
+th {
+  border: 1px solid #eee9e9 ;
+  background-color: rgba(8, 191, 8, 0.529);
+  color: white;
+}
+td {
+  border: 1px solid #ccc;
+}
+
+.form-title {
+    text-align: left;
+    margin-left: 525px;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+  width: 80%;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn,.reset-btn{
+  background-color: hsl(212, 99%, 61%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-top: 15px;
+}
+
+.upload-box {
+    border: 2px solid #ccc;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.section form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section form input[type="text"],
+.section form input[type="email"],
+.section form input[type="password"],
+.section form textarea,
+.section form select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.section form div {
+  text-align: left;
+}
+
+.inline-group {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Student Practice Webpage</h1>
+        <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="section">
+        <h3>Image Section</h3>
+
+        <img src="image/flower.jpg" alt="Flower">
+    </div>
+
+    <!-- Second Image -->
+    <div class="section">
+        <h3>Image Circle</h3>
+
+        <img class="circle" src="image/flower.jpg" alt="flower">
+    </div>
+
+    <!-- Third Image -->
+    <div class="section">
+        <h3>Image Oval</h3>
+
+        <img class="oval" src="image/flower.jpg" alt="flower">
+    </div>
+
+    <!-- Table Section -->
+    <div class="section">
+        <h3>Advanced Table</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Scores</th>
+                    <th rowspan="2">Grade</th>
+                </tr>
+
+                <tr>
+                    <th>Math</th>
+                    <th>CS</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>90</td>
+                    <td>95</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>Bob</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>B</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form 1 -->
+    <div class="section">
+        <h3 class="form-title">Form 1: Basic Info</h3>
+
+        <form action="/upload" method="post">
+
+            <div class="text">
+                <div class="text">
+                    <label for="name" class="required">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="text">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="text">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="text">
+                    <div>
+                        <label for="fileUpload">Upload File</label>
+                    </div>
+                    <div class="upload-box">
+                        <input type="file" id="file">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <input type="reset" value="Reset" class="reset-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Form 2 -->
+    <div class="section">
+        <h3 class="form-title">Form 2: Survey Form</h3>
+
+        <form action="/survey">
+
+            <div>
+                <label for="course" class="required text" >Choose Course</label>
+                <select id="course" name="course">
+                    <option value="">-- Select --</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="text">Gender</label>
+
+                <div class="inline-group">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div>
+                <label class="text">Skills</label>
+
+                <div class="inline-group">
+                    <input type="checkbox" id="html" name="skill">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" name="skill">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="js" name="skill">
+                    <label for="js">JS</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="phone" class="required text">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div>
+                <label for="message" class="text">Message</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="submit-btn">Send</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
